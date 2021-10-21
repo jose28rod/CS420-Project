@@ -35,6 +35,12 @@ h2{
   padding-top: 20%;
   font-size: 25px;
 }
+.menuTextHighlighted {
+  color: red;
+  padding-top: 20%;
+  font-size: 25px;
+  text-decoration: underline;
+}
 
 .sideMenu{
   display: inline-block;
@@ -63,4 +69,19 @@ h2{
   vertical-align: top;
   margin: 1.5% 1.5% 2% 0%;
   padding: 25px;
+}
+
+.blockWMSelection {
+  display: inline-block;
+  background-color: #696969;
+  border-radius: 25px;
+  padding: 25px;
+  width: 97%;
+  text-align: right;
+}
+
+.wmSelection {
+  text-align: right;
+  text-decoration: underline;
+  font-size: 25px;
 }
