@@ -73,10 +73,10 @@ h2{
 
 .blockWMSelection {
   display: inline-block;
-  background-color: #696969;
+  background-color: #9e9e9e;
   border-radius: 25px;
   padding: 25px;
-  width: 97%;
+  width: 96.75%;
   text-align: right;
 }
 
@@ -84,4 +84,41 @@ h2{
   text-align: right;
   text-decoration: underline;
   font-size: 25px;
+}
+
+.blockBackCalendar {
+  display: inline-block;
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  padding: 25px;
+  width: 96.75%;
+  height: 470px;
+}
+
+.blockCalendar {
+  display: inline-block;
+  background-color: white;
+  padding: 25px;
+  width: 96.75%;
+  height: 425px;
+}
+
+.blockCalendarText {
+  text-align: center;
+}
+.calendarDay {
+  padding: 100px;
+}
+.calendarDate {
+  padding: 125px;
+}
+.hrCalendar {
+  width: 70%;
+}
+
+.blockhomework {
+  padding: 100px;
+}
+.homework {
+  padding: 100px;
 }
