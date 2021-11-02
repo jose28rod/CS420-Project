@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Green Leaf</title>
+    <style>
+      
+      body{
+      	margin: 0px;
+      }
+
+      p{
+      	margin: 0px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+      h2{
+        margin: 0px;
+        font-size: 23px;
+        padding: 0px;
+        line-height: 25px;
+      }
+
+      .menu{
+        background-color: #6aa84f;
+        height: 120px;
+        padding: 0px;
+        margin: 0px
+      }
+
+      .menuItem{
+        display: inline-block;
+        min-width: 16%;
+        vertical-align: bottom;
+        text-align: center;
+
+      }
+      .menuText{
+        color: white;
+        padding-top: 20%;
+        font-size: 25px;
+      }
+
+      .sideMenu{
+        display: inline-block;
+        width: 150px;
+        min-height: 33pc;
+        background-color: #d9d9d9;
+        border-radius: 0px 25px 25px 0px;
+        margin: 1.5% 1.5% 2% 0%;
+        padding: 25px;
+        text-align: left;
+      }
+
+      .blockStructure{
+        display: inline-block;
+        width: 80%;
+        vertical-align: top;
+      }
+
+      .block{
+        display: inline-block;
+        background-color: #f3f3f3;
+        border-radius: 25px;
+        width: 20%;
+        height: 200px;
+        text-align: center;
+        vertical-align: top;
+        margin: 1.5% 1.5% 2% 0%;
+        padding: 25px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    
+  	<div class="menu">
+      <div class="menuItem">
+  		  <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
+  			 <p class="menuText">
+  			   GREEN LEAF
+          </p>
+  		  </a>
+      </div>
+      <div class="menuItem">
+        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
+          <p class="menuText">
+            DASHBOARD
+          </p>
+        </a>
+      </div>
+      <div class="menuItem">
+        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
+          <p class="menuText">
+            CALENDAR
+          </p>
+        </a>
+      </div>
+      <div class="menuItem">
+        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
+          <p class="menuText">
+            GOALS
+          </p>
+        </a>
+      </div>
+      <div class="menuItem">
+        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
+          <p class="menuText">
+            CLASSROOM
+          </p>
+        </a>
+      </div>
+      <div class="menuItem">
+        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
+          <p class="menuText">
+            Profile
+          </p>
+        </a>
+      </div>
+  	</div>
+  <div>
+    <p style="text-align:right;">
+    <div class="sideMenu">
+    <p style="text-align:right;">
+    <b>Class leaderboard
+    <p style="text-align:right;">
+      <p>1st place
+      <p>2nd place
+      <p>3rd place
+</div>
+  </body>
+</html>
