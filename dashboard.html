@@ -4,185 +4,166 @@
     <title>Green Leaf</title>
     <style>
       
+      html{
+        height: 100%;
+      }
       body{
       	margin: 0px;
         font-family: 'Tahoma', sans-serif;
+        height: 100%;
       }
-
       p{
       	margin: 0px;
       }
-
       a{
         text-decoration: none;
       }
       h2{
         margin: 0px;
-        font-size: 23px;
+        font-size: 18px;
         padding: 0px;
         line-height: 25px;
       }
-
-      .menu{
-        background-color: #6aa84f;
-        height: 120px;
-        padding: 0px;
-        margin: 0px
+      header{
+        background-color: green;
       }
-
-      .menuItem{
-        display: inline-block;
-        min-width: 16%;
-        vertical-align: middle;
-        text-align: center;
-
-      }
-      .menuText{
-        color: white;
-        margin-top: 40px;
-        font-size: 25px;
-      }
-
-      .sideMenu{
-        display: inline-block;
-        position: fixed;
-        width: 200px;
-        min-height: 570px;
-        background-color: #d9d9d9;
+      aside{
+        float: left;
         border-radius: 0px 25px 25px 0px;
-        margin: 22px 22px 0px 0px;
-        padding: 25px;
-        text-align: left;
+        background-color: #d9d9d9;
+        margin: 20px 2% 20px 0px;
+        width: 14%;
+        min-width: 100px;
+        height: 38pc;
+        padding: 20px;
       }
-
-
-
+      .navbar {
+        width: 100%;
+        background-color: #6aa84f;
+        overflow: auto;
+      }
+      .item {
+        float: left;
+        padding: 38px 22px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        width: 8%; /* Four links of equal widths */
+        text-align: center;
+      }
+      .item:hover {
+        background-color: #f3f3f3;
+        color: black;
+      }
+      .profilePic{
+        padding: 10px 20px 0px 0px;
+      }
+      .upcoming{
+        padding: 10px;
+      }
       .block{
-        display: inline-block;
+        float: left;
         background-color: #f3f3f3;
         border-radius: 25px;
-        width: 332px;
-        height: 332px;
-        text-align: center;
-        vertical-align: top;
-        margin: 22px 1.8% 0px 0px;
-        padding: 25px;
+        width: 22%;
+        min-width: 220px;
+        margin: 20px 0px 0px 20px;
+        min-height: 280px;
+        padding: 20px;
+      }
+      .sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
       }
       .spacer{
-        margin: 30px;
+        height: 200px;
       }
-
-      .profilePic{
-        display: inline-block;
-        border-radius: 50%;
-        height: 104px;
-        padding-top: 8px
-      }
-
-      .menuText:hover{
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-
-  <body>
-    
-  	<div class="menu">
-      <div class="menuItem">
-  		  <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
-  			 <p class="menuText">
-  			   GREEN LEAF
-          </p>
-  		  </a>
-      </div>
-      <div class="menuItem">
-        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
-          <p class="menuText">
-            DASHBOARD
-          </p>
-        </a>
-      </div>
-      <div class="menuItem">
-        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
-          <p class="menuText">
-            CALENDAR
-          </p>
-        </a>
-      </div>
-      <div class="menuItem">
-        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
-          <p class="menuText">
-            GOALS
-          </p>
-        </a>
-      </div>
-      <div class="menuItem">
-        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
-          <p class="menuText">
-            CLASSROOM
-          </p>
-        </a>
-      </div>
-      <div class="menuItem">
-        <a href="file:///C:/Users/jose2/Downloads/TIU%20WORK/problem5/problem5/Home%20Page.html">
-            <img class="profilePic" src="https://raw.githubusercontent.com/jose28rod/CS420-Project/e80d2848f5be28aae7a4dc40cb9ee58bb7513cb1/student%20cropped%20istock.png"/>
-        </a>
-      </div>
-  	</div>
-  	
-  	<div class="sideMenu">
-  		<h2>Upcoming Assignments</h2>
-      <p>
-        <i>NO UPCOMING ASSIGNMENTS</i>
-      </p>
-  	</div>
-
-    <div style="text-align: right">
-      <div class="block">
-        <h2>Math</h2>
-      </div>
-
-      <div class="block">
-        <h2>English</h2>
-      </div>
-
-      <div class="block">
-        <h2>History</h2>
-      </div>
-
-      <div class="block">
-        <h2>Computer Programming</h2>
-      </div>
-
-      <div class="block">
-        <h2>Science</h2>
-      </div>
+      .navbar .icon {
+  display: none;
+}
       
-      <div class="block">
-        <h2>Physics</h2>
-      </div>
 
-      <div class="block">
-
-    </div>
-      <div class="spacer">
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+  </style>
+</head>
+  <body>
+    <header>
+      <div class="navbar" id="myTopnav">
+        <a class="item active" href="#">Green Leaf</a> 
+        <a class="item" href="#">Dashboard</a> 
+        <a class="item" href="#">Calendar</a> 
+        <a class="item" href="#">Goals</a>
+        <a class="item" href="#">Classroom</a>
+        <a class="profilePic" style="float: right;" href="#">
+          <img style="border-radius: 50%" src="https://raw.githubusercontent.com/jose28rod/CS420-Project/e80d2848f5be28aae7a4dc40cb9ee58bb7513cb1/student%20cropped%20istock.png" width="76px"/>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars">Open Nav</i>
+        </a>
       </div>
-    </div>
+    </header>
+
+    <aside>
+      <div class="sticky">
+      <h2>Upcoming Assignments</h2>
+      <ul id="sideBar" class="upcoming">
+      </ul>
+      </div>
+    </aside>
+
+
+
+
+      <script>
+  var li = document.createElement("li"); // <li></li>
+  var assignments = document.createTextNode("No Upcoming Assignments"); 
+  li.appendChild(assignments); // <li>No Upcoming Assignments</li>
+  var element = document.getElementsByTagName("ul")[0];
+  element.appendChild(li);
+
+
+for (var i = 1; i > 0; i--) {
+    //adding 'div' tag to body
+  var tag = document.createElement("div"); // <div></div>
+  tag.classList.add("block");
+  var center = document.createElement("center");
+  tag.appendChild(center); //<div><center></center></div>
+  var text = document.createTextNode("TEST TEXT"); 
+  center.appendChild(text); // <div>TEST TEXT</div>
+  var element = document.getElementsByTagName("body")[0];
+  element.appendChild(tag); // <body><div><center>TEST TEXT</center></div></body>
+}
+
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } 
+          else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+   
   </body>
 </html>
-
-<!--
-        @media screen and (max-width: 959px) {
-        .sideMenu{
-          display: inline-block;
-          background-color: #d9d9d9;
-          border-radius: 25px;
-          width: 80%;
-          height: 332px;
-          text-align: center;
-          vertical-align: top;
-          margin: 4.75%;
-          padding: 25px;
-        }
-      }
--->
